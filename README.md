@@ -75,7 +75,7 @@ db.your_collection_name.find()
 
 Save a data to a collection:
 ```
-db.your_collection_name.save({"name":"Sony AK"})
+db.your_collection_name.save({"name":"Lennart Takanen"})
 ```
 
 Show database version:
