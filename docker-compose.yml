@@ -4,11 +4,9 @@ services:
     image: mongo:latest
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: rootpassword
+      MONGO_INITDB_ROOT_PASSWORD: changeThisWhatYouLike
     ports:
       - 27017:27017
     volumes:
-      - mongodb_data_container:/data/db
-
-volumes:
-  mongodb_data_container:
+      - ./data/mongodb:/data/mongodb
+      - ./data/mongodb.config/mongod.conf:/etc/mongod.conf
